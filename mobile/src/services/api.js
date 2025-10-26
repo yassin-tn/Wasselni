@@ -2,15 +2,14 @@ import axios from 'axios';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 // API Configuration
-// IMPORTANT: When using Expo tunnel mode, the backend should be on YOUR local IP
-// Expo tunnel only tunnels the React Native app, NOT your backend server
-// Your colleague's phone → Expo Tunnel → Your Phone/Computer (same network)
-// But backend is ALWAYS on your local IP (192.168.1.11)
+// 🌍 CLOUD DEPLOYMENT - Backend is now on Render.com!
+// This URL works from ANYWHERE in the world - no same WiFi needed!
+// Your colleague can access from any location, any network
 
-const API_BASE_URL = 'http://192.168.1.11:3000/api';
+const API_BASE_URL = 'https://wasselni.onrender.com/api';
 
-// After deploying to cloud, change to:
-// const API_BASE_URL = 'https://your-app-name.onrender.com/api';
+// For local development, use:
+// const API_BASE_URL = 'http://192.168.1.11:3000/api';
 
 console.log('🌐 API URL:', API_BASE_URL);
 
